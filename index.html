@@ -2,35 +2,38 @@
 <html lang="en">
 
 <head>
-   <script src="game.js"></script>
+  <script type="text/javascript" src="game.js"></script>
+  <!--<script src="game.js"></script>-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <meta charset="UTF-8">
   <title>Slap Object Game</title>
   <link rel="stylesheet" href="game.css">
- 
+
 </head>
 
 <body>
-   <div>
-     
-    
-      <div class="container-fluid"><img src="" alt=""></div>
-        <title>PLAYER</title>
-        <h1 id="health">100</h1>
-      </div>
-      <div>Controller
+
+  <div>
+
+    <div class="container"><img src="" alt="">
+      <title>PLAYER</title>
+      <h1 id="health">100</h1>
+    </div>
+    <div>Controller
       <button onClick="onSlap()">Slap</button>
       <button onClick="onPunch()">Punch</button>
       <button onClick="onKick()">Kick</button>
       <button onClick="reset()">RESET</button>
+    </div>
+    <div class="row hud">
+      <div class="col-xs-12 col-lg-12">
+        <div class="card-1"></div>
+        <div class="card-2"></div>
+        <div class="card-3"></div>
+        <div class="card-4"></div>
       </div>
-      <!--<video loop muted autoplay poster="images/bckgrnd_screenshot.jpg" class="fullscreen-bg__video">
-        <source src="images/FireTwirl.mp4" type="video/mp4">-->
-    <!--</div>
-  
-
-  </div>-->
-
-   </body>
+    </div>
+  </div>
+</body>
 
 </html>
