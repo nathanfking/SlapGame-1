@@ -1,12 +1,13 @@
-var health = 100;
+
 // this is player object
-function player (johnDoe,janeDoe,tomDoe,tinaDoe){
-    this.johnDoe = johnDoe;
-    this.janeDoe = janeDoe;
-    this.tomDoe = tomDoe;
-    this.tinaDoe = tinaDoe;
-}
+// function player (johnDoe,janeDoe,tomDoe,tinaDoe){
+//     this.johnDoe = johnDoe;
+//     this.janeDoe = janeDoe;
+//     this.tomDoe = tomDoe;
+//     this.tinaDoe = tinaDoe;
+// }
 // This is attack functions
+var health = 100;
 function onSlap() {
     var slap = Math.floor(Math.random()*10)+1;
     health -= slap;
@@ -38,4 +39,4 @@ function onSlap() {
     var healthElem = document.getElementById("health");
     healthElem.innerHTML = health;
 
-    }
+    }break
