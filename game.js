@@ -31,4 +31,4 @@ function onSlap() {
     var healthElem = document.getElementById("health");
     healthElem.innerHTML = health;
 
-    }break
+    }

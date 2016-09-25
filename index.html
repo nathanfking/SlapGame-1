@@ -14,12 +14,14 @@
 <body>
 
   <div>
-
+    <video playsinline autoplay muted loop poster="" id="bgvid">
+    <source src="ld_screen.mp4" type="video/mp4">
+  </video>
     <div class="container"><img src="" alt="">
       <title>PLAYER</title>
       <h1 id="health">100</h1>
     </div>
-    <div>Controller
+    <div class="col-xs-12 col-lg-12 HUD">
       <button onClick="onSlap()">Slap</button>
       <button onClick="onPunch()">Punch</button>
       <button onClick="onKick()">Kick</button>
@@ -34,6 +36,7 @@
       </div>
     </div>
   </div>
+
 </body>
 
 </html>
