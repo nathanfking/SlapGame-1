@@ -2,8 +2,7 @@
 <html lang="en">
 
 <head>
-  <script type="text/javascript" src="game.js"></script>
-  <!--<script src="game.js"></script>-->
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <meta charset="UTF-8">
   <title>Slap Object Game</title>
@@ -15,28 +14,35 @@
 
   <div>
     <video playsinline autoplay muted loop poster="" id="bgvid">
-    <source src="ld_screen.mp4" type="video/mp4">
-  </video>
-    <div class="container"><img src="" alt="">
+      <source src="ld_screen.mp4" type="video/mp4">
+    </video>
+    <h1 id="enemy-health">2500</h1>
+    <div class="bloodseeker">
+      <img id="enemy-image" src="bld.png">
       <title>PLAYER</title>
-      <h1 id="health">100</h1>
     </div>
-    <div class="col-xs-12 col-lg-12 HUD">
-      <button onClick="onSlap()">Slap</button>
-      <button onClick="onPunch()">Punch</button>
-      <button onClick="onKick()">Kick</button>
-      <button onClick="reset()">RESET</button>
-    </div>
-    <div class="row hud">
-      <div class="col-xs-12 col-lg-12">
-        <div class="card-1"></div>
-        <div class="card-2"></div>
-        <div class="card-3"></div>
-        <div class="card-4"></div>
-      </div>
+
+    <!--This is the controller/HEADS UP DISPLAY-->
+    <div class="flex-container hud">
+      <div class="card-1"></div>
+      <button onClick="onBasicAttack()">Attack</button>
+
+      <div class="card-2"></div>
+      <button onClick="onRocketBarrage()">Rocket Barrage</button>
+
+      <div class="card-3"></div>
+      <button onClick="onHomingMissile()">Homing Missile</button>
+
+      <div class="card-4"></div>
+      <button onClick="onFlakCannon()">Flak Cannon</button>
+
+      <div class="card-"></div>
+      <button onClick="onPlayAgain()">Play Again</button>
+
     </div>
   </div>
 
+  <script src="game.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
- *{outline:1px solid red;}
+ /**{outline:1px solid red;}*/
 video#bgvid { 
     position: fixed;
     top: 50%;
@@ -14,4 +14,23 @@ video#bgvid {
     transform: translateX(-50%) translateY(-50%);
     background: url(polina.jpg) no-repeat;
     background-size: cover; 
+}
+.bloodseeker{
+    display: flex;
+justify-content: center; 
+
+}
+.hud{
+    position: absolute;
+    bottom: 0;
+display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   justify-content: space-between;
+   width:100%;
+   margin:0 auto; 
+
+   height:200px; 
+   background-position:cover;
 }
