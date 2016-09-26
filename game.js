@@ -1,4 +1,9 @@
+var Bloodseeker = new enemy('Bloodseeker',100,5,5,5,10
+var enemy = Bloodseeker;
+var items = {
 
+}
+function player(health, )
 var health = 100;
 function onSlap() {
     var slap = Math.floor(Math.random()*10)+1;
@@ -30,5 +35,4 @@ function onSlap() {
     
     var healthElem = document.getElementById("health");
     healthElem.innerHTML = health;
-
-    }
+ }
